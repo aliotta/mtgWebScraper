@@ -4,7 +4,9 @@
   "description": "no",
   "main": "yes",
   "scripts": {
-    "test": "no"
+    "test": "no",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,8 @@
     "emitter": "0.0.5",
     "fs": "0.0.1-security",
     "spooky": "^0.2.5",
-    "string_decoder": "^0.10.31"
-  }
+    "string_decoder": "^0.10.31",
+    "snyk": "^1.147.0"
+  },
+  "snyk": true
 }
